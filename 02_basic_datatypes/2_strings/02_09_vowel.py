@@ -6,3 +6,8 @@ CHALLENGE: Can you change the script so that it counts the occurrence of each in
            in the string and print a count for each of them?
 
 '''
+
+str = input('Enter some words: ')
+#print(str.count('a')+str.count('e')+str.count('i')+str.count('o')+str.count('u'))
+for vowel in ['a','e','i','o','u']:
+    print(f'{vowel} = {str.count(vowel)}')

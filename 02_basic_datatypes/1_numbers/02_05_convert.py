@@ -10,3 +10,10 @@ Demonstrate how to:
     Take note of what information is lost when some conversions take place.
 
 '''
+
+float(5)
+int(5.0)
+5.5/5
+value1 = input('Enter value: ')
+value2 = input('Enter value: ')
+value1*value2
