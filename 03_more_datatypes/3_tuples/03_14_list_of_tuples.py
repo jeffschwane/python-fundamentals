@@ -6,3 +6,9 @@ input = "hello world"
 result_list = [('h', 'e', 'l', 'l', 'o'), ('w', 'o', 'r', 'l', 'd')]
 
 '''
+
+str = input('Enter some words: ')
+lst = str.split()
+for index,word in enumerate(lst):
+    lst[index] = tuple(word)
+print(lst)

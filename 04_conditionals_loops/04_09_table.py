@@ -8,3 +8,9 @@ Use a loop to print the following table to the console:
  40 41 42 43 44 45 46 47 48 49
 
 '''
+
+for tens in list(range(0,50,10)):
+    for ones in list(range(0,10)):
+        num = tens+ones
+        print(num, end=" ")
+    print("\n")

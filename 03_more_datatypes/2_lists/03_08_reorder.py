@@ -7,3 +7,17 @@ Example input:  1,2,3,4,5,6,7,8,9,10
 Example output: 2,4,6,8,10,9,7,5,3,1
 
 '''
+numbers = []
+for num in range(10):
+    number = int(input('Enter a number: '))
+    numbers.append(number)
+print(numbers[1])
+print(numbers[3])
+print(numbers[5])
+print(numbers[7])
+print(numbers[9])
+print(numbers[8])
+print(numbers[6])
+print(numbers[4])
+print(numbers[2])
+print(numbers[0])

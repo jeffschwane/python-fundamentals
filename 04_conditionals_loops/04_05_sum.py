@@ -7,3 +7,10 @@ The output of your calculation should therefore look like this:
 
 The sum is: 5050
 '''
+
+str = input("Enter two numbers: ")
+lst = list(map(int,str.split()))
+sum = 0
+for num in list(range(lst[0],lst[1]+1)):
+    sum += num
+print(sum)
