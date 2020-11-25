@@ -25,3 +25,8 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
+
+for entry in office:
+    entry['first_name'] = entry['full_name'].split()[0]
+    entry['last_name'] = entry['full_name'].split()[-1]
+    print(f'{entry["last_name"]}, {entry["first_name"]:20}{entry["item"]}')
