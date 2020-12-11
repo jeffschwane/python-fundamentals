@@ -18,3 +18,59 @@ CLASSES AND INHERITANCE
     Any class attributes you could add?
 
 '''
+
+class Movie:
+    """Models attributes and methods of a movie object.
+
+    ...
+
+    Attributes
+    ----------
+    year : int
+        Year the movie was released
+    title : str
+        title of the film
+    """
+
+    def __init__(self, year, title):
+        self.year = year
+        self.title = title
+
+
+class RomCom(Movie):
+    """Models attributes and methods of a romcom object, subclass of movie.
+
+    ...
+
+    Attributes
+    ----------
+    year : int
+        Year the movie was released
+    title : str
+        title of the film
+    """
+
+class ActionMovie(Movie):
+"""Models attributes and methods of an action movie object, subclass of movie.
+
+    ...
+
+    Attributes
+    ----------
+    year : int
+        Year the movie was released
+    title : str
+        title of the film
+    pg: str
+        parental guidance rating of the movie
+"""
+
+    def __init__(self, year, title, pg = '13'):
+        super().__init__(year, title)
+        self.pg = pg
+
+film = ActionMovie(2012, 'Rising Tide')
+print(film.pg)
+
+
+
