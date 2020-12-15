@@ -71,6 +71,3 @@ class ActionMovie(Movie):
 
 film = ActionMovie(2012, 'Rising Tide')
 print(film.pg)
-
-
-
