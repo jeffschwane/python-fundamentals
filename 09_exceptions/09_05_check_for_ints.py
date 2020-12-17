@@ -6,3 +6,13 @@ the input was an integer or not.
 The script should keep prompting the user until they enter an integer.
 
 '''
+
+data = False
+while data == False:
+    entry = input("Enter an integer: ")
+    try:
+        int(entry)
+        print(f"You entered the integer {entry}")
+        data = True
+    except ValueError:
+        print("Please enter an integer.")

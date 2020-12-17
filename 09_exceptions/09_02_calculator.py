@@ -8,3 +8,12 @@ the script should handle:
 Test it and make sure it does not crash when you enter incorrect values.
 
 '''
+
+numerator = input('Enter the number to be divided: ')
+denominator = input('Enter the number to divide by: ')
+try:
+    print(int(numerator) / int(denominator))
+except ValueError:
+    print('You need to enter a number!')
+except ZeroDivisionError:
+    print('You cannot divide by zero!')
