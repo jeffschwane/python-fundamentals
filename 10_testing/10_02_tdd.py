@@ -8,3 +8,9 @@ fail and write tests that will check and prevent failure.
 You do not need to implement the actual functions after writing the tests but you may.
 
 '''
+
+"""Add two numbers together"""
+
+
+def test_add(self):
+    self.assertEquals(my_func(3, 2), 5)
